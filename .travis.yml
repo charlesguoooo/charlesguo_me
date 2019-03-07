@@ -3,22 +3,23 @@ rvm:
 - 2.3.3
 sudo: false
 before_install:
-- openssl aes-256-cbc -K $encrypted_05e0a1a64de5_key -iv $encrypted_05e0a1a64de5_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d
+- openssl aes-256-cbc -K $encrypted_b99e9d0e9331_key -iv $encrypted_b99e9d0e9331_iv
+  -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 script:
 - bundle install
 - bundle exec jekyll build
 dist: trusty
 after_success:
-- git clone https://github.com/chinakevinguo/kevinguo.me.git
-- cd kevinguo.me && rm -rf * && cp -r ../_site/* .
-- git config user.name "chinakevinguo"
-- git config user.email "chinakevinguo@live.com"
+- git clone https://github.com/charlesguoooo/charlesguo.me.git
+- cd charlesguo.me && rm -rf * && cp -r ../_site/* .
+- git config user.name "charlesguoooo"
+- git config user.email "charlesguoooo@gmail.com"
 - git add --all .
 - git commit -m "Travis CI Auto Builder"
-- git push --force https://${JEKYLL_GITHUB_TOKEN}@github.com/chinakevinguo/kevinguo.me.git
+- git push --force https://${JEKYLL_GITHUB_TOKEN}@github.com/charlesguoooo/charlesguo.me.git
   master
-- ssh root@kevinguo.me "docker restart chinakevinguo_jekyll_kevinguo_me"
+- ssh root@charlesguo.me "docker restart chinakevinguo_jekyll_kevinguo_me"
 branches:
   only:
   - master
@@ -26,4 +27,4 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 addons:
-  ssh_known_hosts: kevinguo.me
+  ssh_known_hosts: charlesguo.me 

@@ -2,12 +2,12 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://kevinguo.me
+url: https://charlesguo.me
 date_format: "ordinal"
-title: KevinGuo
+title: CharlesGuo
 subtitle: "Just do it now !"
-description: "KevinGuo's blog"
-keywords: KevinGuo
+description: "CharlesGuo's blog"
+keywords: CharlesGuo
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -16,12 +16,12 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: KevinGuo
+author: CharlesGuo
 organization: Thoughtworks,Inc.
 organization_url: https://www.thoughtworks.com/
-github_username: chinakevinguo
+github_username: CharlesGuoooo 
 location: Wuhan, China
-email: chinakevinguo@gmail.com
+email: charlesguoooo@gmail.com
 
 # ---------------- #
 #    Navigation    #
@@ -82,7 +82,7 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: chinakevinguo/chinakevinguo.github.io
+repository: charlesguoooo/charlesguo_me
 
 # ---------------- #
 #      Comments    #

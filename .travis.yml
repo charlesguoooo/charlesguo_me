@@ -16,8 +16,7 @@ after_success:
 - git config user.email "charlesguoooo@gmail.com"
 - git add --all .
 - git commit -m "Travis CI Auto Builder"
-- git push --force https://${JEKYLL_GITHUB_TOKEN}@github.com/charlesguoooo/charlesguo.me.git
-  master
+- git push --force https://${JEKYLL_GITHUB_TOKEN}@github.com/charlesguoooo/charlesguo.me.git master
 - ssh root@charlesguo.me "docker restart charlesguo_me"
 branches:
   only:
